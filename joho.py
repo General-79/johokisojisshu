@@ -92,7 +92,7 @@ def main():
 
         # フォント設定（ここではデフォルトフォント）
         # フォントファイルのパス
-        text_font = "fonts/NotoSansCJK-Regular.ttc"  
+        text_font = "meiryo"  
         
         
         # 画像に合成（複数のテキスト付き）
