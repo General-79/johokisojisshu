@@ -10,16 +10,16 @@ import io
 import os
 
 # フォントファイルのパス
-font_path = "fonts/custom_font.ttf"
+# font_path = "fonts/custom_font.ttf"
 
-# フォントファイルの存在確認
-if os.path.exists(font_path):
-    print("フォントファイルが見つかりました。")
-    font = ImageFont.truetype(font_path, 30)  # フォントサイズ30で読み込み
-else:
-    print(f"フォントファイルが見つかりません: {font_path}")
-    # フォントが見つからない場合はデフォルトフォントを使用
-    font = ImageFont.load_default()
+# # フォントファイルの存在確認
+# if os.path.exists(font_path):
+#     print("フォントファイルが見つかりました。")
+#     font = ImageFont.truetype(font_path, 30)  # フォントサイズ30で読み込み
+# else:
+#     print(f"フォントファイルが見つかりません: {font_path}")
+#     # フォントが見つからない場合はデフォルトフォントを使用
+#     font = ImageFont.load_default()
 
 # 背景画像のリスト（6種類の背景画像を設定）
 background_images = {
@@ -92,14 +92,15 @@ def main():
 
         # フォント設定（ここではデフォルトフォント）
         # フォントファイルのパス
-        text_font = "meiryo"  
+        # text_font = "meiryo"
+
         
         
         # 画像に合成（複数のテキスト付き）
         combined_image = combine_images_with_text(
             background_image.copy(), overlay_image, position=position, 
             size=(resize_width, resize_height), texts=texts, 
-            text_font=text_font, text_size=text_size
+             text_size=text_size
         )
 
         # 合成した画像を表示
