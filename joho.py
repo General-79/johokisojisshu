@@ -92,8 +92,8 @@ def main():
 
         # フォント設定（ここではデフォルトフォント）
         # フォントファイルのパス
-        text_font = "meiryo"  
-        # WindowsやMacの場合は別途フォントパスを指定することをお勧めします
+        text_font = "fonts/NotoSansCJK-Regular.ttc"  
+        
         
         # 画像に合成（複数のテキスト付き）
         combined_image = combine_images_with_text(
